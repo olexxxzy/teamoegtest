@@ -20,7 +20,6 @@ body {
     justify-content: space-between;
     flex-direction: row;
     
-    
     border-radius: 0 0 54px 54px;
 
 }
@@ -92,9 +91,10 @@ body {
 }
 
 .playerphotos {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
@@ -216,35 +216,7 @@ opacity: 1;
 
 }
 
-#popupmjj {
-    position: fixed;
-    top: 40%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width:600px;
-    padding: 50px; 
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    background: #fff;
-
-}
-
-#popupmjj.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-
-}
-
-.close1 {
-    text-align: right;
-
-}
-
-        /* Общие стили */
+/* Общие стили */
 
 /* Добавляем стили для мобильных устройств (ширина экрана до 768px) */
 @media only screen and (max-width: 768px) {
@@ -261,9 +233,14 @@ opacity: 1;
         align-items: center; /* Выравниваем элементы по центру по вертикали */
     }
 
+    .logo {
+width: 28px;
+height: 28px;
+
+    }
     .nav-list {
-        column-gap: 20px; /* Уменьшаем расстояние между элементами меню */
-        font-size: 24px; /* Уменьшаем размер шрифта */
+        column-gap: 10px; /* Уменьшаем расстояние между элементами меню */
+        font-size: 14px; /* Уменьшаем размер шрифта */
     }
 
     .roster,
@@ -272,7 +249,12 @@ opacity: 1;
         font-size: 50px; /* Уменьшаем размер шрифта заголовков */
     }
 
-    .playerphotos,
+    .playerphotos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .teamach,
     .aboutus {
         font-size: 20px; /* Уменьшаем размер шрифта текста */
@@ -291,6 +273,10 @@ opacity: 1;
         padding: 30px; /* Уменьшаем внутренние отступы */
     }
 }
+
+    
+
+
 
 
 }
