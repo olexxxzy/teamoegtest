@@ -1,0 +1,247 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+        font-family: "Roboto", sans-serif;
+
+
+
+
+.header {
+
+    padding: 21px 0 100px ;
+    height: 850px;
+    background-color: black;
+    background-image: url('./../img/b5.svg');
+    background-size: cover;
+    background-position: center center;
+    
+    
+    border-radius: 0 0 54px 54px;
+
+}
+
+.header#blur.active{
+    filter: blur(20px);
+}
+
+
+.header a {
+    color: white;
+}
+
+
+.container {
+   
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 16px;
+
+
+}
+
+
+
+
+.container--header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+.nav {
+    height: 150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav-list {
+    display: flex;
+    column-gap: 70px;
+    font-size: 40px;
+    font-weight: 300;
+    font-weight: bold;
+}
+.nav-list__item {
+    opacity: 0.9;
+
+}
+
+.nav-list__link--active {
+    opacity: 1;
+
+}
+
+.roster {
+
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.playerphotos {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.playerphotos#blur.active{
+    filter: blur(20px);
+}
+
+.olex:hover {
+    transform: scale(1.05); 
+    transition: 1s;
+   }
+
+.lixemao:hover {
+    transform: scale(1.05); 
+    transition: 1s;
+   }
+
+
+.isack:hover {
+    transform: scale(1.05); 
+    transition: 1s;
+   }
+
+
+
+.playernames {
+    font-size: 40px;
+    text-align: center;
+
+
+}
+
+.ach {
+    font-size: 80px;
+    text-align:center;
+    padding: 20px;
+}
+.ach#blur.active{
+    filter: blur(20px);
+}
+
+.teamach#blur.active{
+    filter: blur(20px);
+}
+.teamach {
+    display: list-item;
+    font-size: 80px;
+    font-weight: 300; 
+}
+
+.tournaments {
+margin: 100px;
+
+
+
+}
+
+.about {
+    font-size: 80px;
+    text-align:center;
+    padding: 20px;
+
+}
+
+.aboutus {
+   font-size: 35px;
+   text-align:center;
+   padding: 20px;
+
+
+}
+
+.upward {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background:url(upward.png);
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+
+
+
+
+}
+
+.upward.active{
+visibility: visible;
+opacity: 1;
+
+
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    padding: 50px; 
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    background: #fff;
+
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+#popupmjj {
+    position: fixed;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    padding: 50px; 
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    background: #fff;
+
+}
+
+#popupmjj.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.close1 {
+    text-align: right;
+
+}
+
+
+}
+
+
